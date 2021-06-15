@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পকেট ক্যালকুলাটর</title>
+
+    <link rel="stylesheet" href="cal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div id="result">
+                <div id="history">
+                    <p id="history-value">Pocket Calculator</p>
+                </div>
+                <div id="output">
+                    <input id="output" type="text" value="" name="display">
+                </div>
+            </div>
+        <form action="" name="form">
+
+            <div id="keyboard">
+                <button class="operator" id="clear" onclick="mahi()">Mahi</button>
+                
+                <input type="button" name="btn" value="C" class="operator" onclick="output.display.value=null">
+                
+                <input type="button" name="btn" value="%" class="operator" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="/" class="operator" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="7" class="number" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="8" class="number" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="9" class="number" onclick="calculate(this.value)">
+
+                <input type="button" name="btn" value="*" class="operator" onclick="calculate(this.value)">
+   
+                <input type="button" name="btn" value="4" class="number" onclick="calculate(this.value)">
+               
+                <input type="button" name="btn" value="5" class="number" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="6" class="number" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="-" class="operator" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="1" class="number" onclick="calculate(this.value)">
+               
+                <input type="button" name="btn" value="2" class="number" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="3" class="number" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="+" class="operator" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="Help" class="empty" onclick="help()">
+               
+                <input type="button" name="btn" value="0" class="number" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="." class="number" onclick="calculate(this.value)">
+                
+                <input type="button" name="btn" value="=" class="operator" onclick="output.display.value=eval(output.display.value)">
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <footer id="mahi" style="align-items: center !important;">© Mahmudul Ahsan</footer>
+
+    <script src="cal.js"></script>
+    
+</body>
+</html>

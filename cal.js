@@ -7,6 +7,6 @@ function help(){
 }
 
 function mahi(){
-    alert("আসসালামুয়ালাইকুম, ক্যালকুলাটরটি ব্যবহার করার জন্য অসংখ্য ধন্যবাদ -মাহমুদুল আহসান মাহী :)")
+    alert("Github: https://github.com/mahmudulahsan ");
 }
 
